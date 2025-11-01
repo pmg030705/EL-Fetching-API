@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(25, 25, 30);
+}
+
+.container {
+  /* border: 1px solid white; */
+  background-color: rgba(64, 70, 76, 0.334);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.64);
+}
+
+.container h2 {
+  color: rgb(195, 255, 0);
+}
+
+form input {
+  padding: 8px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: medium;
+}
+
+form button {
+  margin-left: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: medium;
+  background-color: blue;
+  color: aliceblue;
+}
+button:hover {
+  background-color: red;
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+.error-box {
+  margin-top: 10px;
+  color: red;
+}
+
+.fetched-details {
+  border: 2px solid white;
+  width: 100%;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+.fetched-details {
+  color: yellowgreen;
+}
+.details {
+  align-content: space-evenly;
+  height: fit-content;
+  /* padding: 10px; */
+  display: grid;
+  justify-content: space-evenly;
+  align-items: start;
+  grid-template-areas: "feature detail detail detail detail";
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.details span {
+  margin: 2px;
+  /* grid-area: detail; */
+  border: 2px solid yellow;
+  padding: 5px;
+  color: antiquewhite;
+  /* width: 100%; */
+}
+
+.hidden {
+  display: none;
+}

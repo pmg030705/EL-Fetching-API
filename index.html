@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Data Fetcher</h2>
+      <form id="input-form">
+        <input type="text" placeholder="Enter your full name" id="name" />
+        <button type="submit" id="fetch-btn">Fetch details</button>
+      </form>
+      <div class="error-box hidden"></div>
+      <div class="hidden fetched-details">
+        <h4>User Details</h4>
+        <span class="details"
+          ><span style="grid-area: feature; border: none" class="feature"
+            >Name:</span
+          >
+          <span style="grid-area: detail" class="detail" id="userName"></span
+          ><br
+        /></span>
+        <span class="details"
+          ><span style="grid-area: feature; border: none" class="feature"
+            >Email:</span
+          ><span style="grid-area: detail" class="detail" id="userEmail"></span
+          ><br
+        /></span>
+        <span class="details"
+          ><span style="grid-area: feature; border: none" class="feature"
+            >Address:</span
+          ><span
+            style="grid-area: detail"
+            class="detail"
+            id="userAddress"
+          ></span
+          ><br
+        /></span>
+      </div>
+    </div>
+  </body>
+</html>
